@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>秦汉西非 | 加纳矿业工程、矿山运营与资源投资</title>
+<meta name="description" content="秦汉西非自2022年进入加纳，围绕大型金矿建设与运营，开展矿业工程、采剥施工、运营维护和矿业投资。">
+<style>
+:root{
+  --bg:#06201a;--bg2:#0a2a22;--card:#0d3227;--gold:#e3b95a;--gold2:#b8801f;
+  --ink:#eaf1ed;--mute:#9db3a9;--line:rgba(227,185,90,.24);
+  --serif:"Songti SC","Noto Serif SC","Source Han Serif SC","STSong","SimSun",serif;
+  --sans:-apple-system,"PingFang SC","Noto Sans SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{font-family:var(--sans);color:var(--ink);background:var(--bg);line-height:1.75;font-size:16px;overflow-x:hidden}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--serif);font-weight:700;line-height:1.3}
+.gold{background:linear-gradient(100deg,#f8e2a0,#e0aa48 50%,#b8801f);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+header{position:fixed;top:0;left:0;right:0;z-index:20;background:rgba(6,32,26,.72);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:58px;gap:16px}
+.logo{font-family:var(--serif);font-size:20px;font-weight:700;letter-spacing:.1em;text-decoration:none;white-space:nowrap}
+.logo small{font:400 11px var(--sans);color:var(--mute);margin-left:8px;letter-spacing:.05em}
+nav{display:flex;gap:22px;overflow-x:auto;font-size:14px;scrollbar-width:none;align-items:center}
+nav::-webkit-scrollbar{display:none}
+nav a{text-decoration:none;color:var(--mute);white-space:nowrap;padding:4px 0}
+nav a:hover{color:var(--gold)}
+nav a.cta{color:var(--bg);background:var(--gold);padding:5px 16px;font-weight:600}
+nav a.cta:hover{background:#fff;color:var(--bg)}
+
+/* hero */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:center;overflow:hidden;background:radial-gradient(120% 80% at 70% 20%,#0f4a38 0%,var(--bg) 62%)}
+.hero>img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.35}
+#dust{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.pit{position:absolute;left:0;right:0;bottom:0;width:100%;height:58%}
+.hero .wrap{position:relative;z-index:2;padding-top:110px;padding-bottom:180px}
+.kicker{display:inline-block;font-size:13px;letter-spacing:.14em;color:var(--gold);border:1px solid var(--line);padding:5px 16px;margin-bottom:22px;background:rgba(6,32,26,.5)}
+.hero h1{font-size:clamp(34px,6.4vw,76px);letter-spacing:.02em;max-width:11em}
+.hero p.sub{margin-top:22px;max-width:34em;font-size:clamp(15px,2vw,18px);color:#c4d6cd}
+.btns{margin-top:34px;display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 30px;font-size:15px;text-decoration:none;border:1px solid var(--gold);color:var(--ink);transition:.2s}
+.btn.fill{background:linear-gradient(100deg,#f1d27f,#d49b36);color:#14271f;font-weight:700;border-color:transparent;box-shadow:0 0 30px rgba(227,185,90,.35)}
+.btn:hover{transform:translateY(-2px);box-shadow:0 0 34px rgba(227,185,90,.5)}
+.scrollhint{position:absolute;z-index:2;bottom:22px;left:50%;transform:translateX(-50%);width:1px;height:46px;background:linear-gradient(var(--gold),transparent)}
+
+/* truck animation */
+.truck{animation:drive 22s linear infinite}
+@keyframes drive{from{transform:translateX(-160px)}to{transform:translateX(1360px)}}
+
+/* stats */
+.stats{position:relative;z-index:3;margin-top:-90px}
+.stats ul{list-style:none;display:grid;grid-template-columns:repeat(6,1fr);background:linear-gradient(180deg,rgba(13,50,39,.95),rgba(8,36,29,.95));border:1px solid var(--line);box-shadow:0 20px 60px rgba(0,0,0,.45)}
+.stats li{padding:28px 14px;text-align:center;border-left:1px solid var(--line)}
+.stats li:first-child{border-left:0}
+.stats b{display:block;font:700 clamp(26px,3.4vw,40px)/1.1 var(--serif)}
+.stats b i{font:400 13px var(--sans);font-style:normal;color:var(--gold);-webkit-text-fill-color:var(--gold);margin-left:2px}
+.stats span{font-size:13px;color:var(--mute)}
+
+section{padding:96px 0}
+section.light{background:var(--bg2)}
+.sec-h{max-width:42em;margin-bottom:44px}
+.sec-h h2{font-size:clamp(28px,4vw,42px)}
+.sec-h p{margin-top:12px;color:var(--mute)}
+.bar{display:block;width:56px;height:3px;background:linear-gradient(90deg,var(--gold),var(--gold2));margin-bottom:16px}
+.grid{display:grid;gap:22px}
+.g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+
+.card{position:relative;background:linear-gradient(160deg,var(--card),#082a21);border:1px solid var(--line);padding:26px;transition:.25s}
+.card:hover{transform:translateY(-4px);border-color:var(--gold);box-shadow:0 14px 40px rgba(0,0,0,.4),0 0 24px rgba(227,185,90,.15)}
+.card h3{font-size:19px;margin-bottom:8px}
+.card p{font-size:15px;color:var(--mute)}
+.card svg.ic{width:56px;height:34px;color:var(--gold);margin-bottom:14px;display:block}
+.tag{display:inline-block;font-size:12px;padding:2px 12px;border:1px solid var(--gold);color:var(--gold);margin-bottom:12px}
+.tag.on{background:var(--gold);color:var(--bg);font-weight:700}
+
+/* photo slot: shows illustration unless a real photo exists */
+.ph{position:relative;overflow:hidden;aspect-ratio:16/10;border:1px solid var(--line);background:
+  radial-gradient(80% 90% at 70% 20%,rgba(227,185,90,.16),transparent 60%),
+  repeating-linear-gradient(172deg,rgba(255,255,255,.035) 0 2px,transparent 2px 26px),
+  linear-gradient(135deg,#104331,#051812)}
+.ph svg{position:absolute;inset:0;margin:auto;width:44%;max-height:60%;color:var(--gold);opacity:.7}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ph.tall{aspect-ratio:4/3}
+.ph figcaption{position:absolute;left:0;bottom:0;right:0;padding:26px 16px 10px;font-size:13px;color:#fff;background:linear-gradient(transparent,rgba(0,0,0,.65));z-index:1}
+
+/* about */
+.about{display:grid;grid-template-columns:1.15fr 1fr;gap:56px;align-items:start}
+.about p+p{margin-top:14px}
+.about p{color:#c4d6cd}
+.ent{list-style:none;margin-top:6px}
+.ent li{padding:12px 0 12px 18px;border-top:1px solid var(--line);font-size:13px;letter-spacing:.03em;position:relative}
+.ent li::before{content:"";position:absolute;left:0;top:21px;width:7px;height:7px;background:var(--gold);transform:rotate(45deg)}
+
+/* namdini */
+.nam{display:grid;grid-template-columns:1.1fr 1fr;border:1px solid var(--line);background:var(--card)}
+.nam .ph{border:0;aspect-ratio:auto;min-height:340px}
+.nam .txt{padding:38px}
+.nam small{color:var(--gold);font-size:13px}
+.nam h3{font-size:clamp(28px,3.4vw,40px);margin:4px 0 14px}
+.nam p{color:#c4d6cd;font-size:15px}
+.scope{margin-top:22px}
+.scope div{padding:12px 0;border-top:1px solid var(--line)}
+.scope b{font-family:var(--serif);color:var(--gold);font-size:16px;display:block}
+.scope span{font-size:14px;color:var(--mute)}
+.places{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.places span{padding:6px 16px;border:1px solid var(--line);background:rgba(255,255,255,.03);font-size:14px}
+
+/* equipment */
+.eq{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.eq ul{list-style:none}
+.eq li{display:flex;gap:18px;padding:16px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.eq li b{font:700 26px var(--serif);min-width:7.2em;white-space:nowrap}
+.eq li span{color:var(--mute);font-size:14px}
+
+/* team */
+.seg{display:flex;height:64px;margin:8px 0 10px;border:1px solid var(--line)}
+.seg div{display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:600;color:#14271f}
+.seg div:nth-child(1){width:25%;background:#c79436}
+.seg div:nth-child(2){width:50%;background:linear-gradient(100deg,#f1d27f,#d9a441)}
+.seg div:nth-child(3){width:25%;background:#9f7226;color:#fff}
+.segnote{font-size:14px;color:var(--mute);margin-bottom:34px}
+.govs{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.govs span{padding:5px 14px;border:1px solid var(--line);font-size:13px;color:#c4d6cd}
+
+/* contact */
+.contact{background:radial-gradient(90% 120% at 80% 0%,#0f4a38,var(--bg) 70%);border-top:1px solid var(--line)}
+.contact h2{font-size:clamp(30px,4.6vw,52px)}
+.contact .lead{color:#c4d6cd;max-width:32em;margin-top:12px}
+.cg{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:40px}
+.cg a,.cg div{display:block;text-decoration:none;border:1px solid var(--line);padding:22px;background:rgba(6,32,26,.6);transition:.2s;word-break:break-word}
+.cg a:hover{border-color:var(--gold);box-shadow:0 0 28px rgba(227,185,90,.25);transform:translateY(-3px)}
+.cg small{display:block;color:var(--gold);font-size:13px;margin-bottom:6px}
+.cg b{font-weight:600;font-size:15px;line-height:1.5;display:block}
+.copy{padding:26px 0;border-top:1px solid var(--line);font-size:12px;color:var(--mute);margin-top:56px}
+
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .7s}
+.rv.in{opacity:1;transform:none}
+
+@media (max-width:900px){
+  .stats ul{grid-template-columns:repeat(3,1fr)}
+  .stats li{border-top:1px solid var(--line)}
+  .stats li:nth-child(-n+3){border-top:0}
+  .stats li:nth-child(4){border-left:0}
+  .g2,.g3,.g4,.about,.nam,.eq,.cg{grid-template-columns:1fr}
+  .cg{grid-template-columns:1fr 1fr}
+  .nam .ph{min-height:230px}
+  .nam .txt{padding:26px}
+  section{padding:66px 0}
+  .logo small{display:none}
+  .eq li{flex-direction:column;gap:2px}
+}
+@media (max-width:520px){.cg{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}.truck{animation:none;transform:translateX(520px)}
+  .rv{opacity:1;transform:none;transition:none}
+}
+</style>
+</head>
+<body>
+
+<!-- 图标库：矿卡、挖掘机、选厂、光伏、河道、矿坑 -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-truck" viewBox="0 0 100 60"><path fill="currentColor" d="M6 14l50 9v18H6z"/><path fill="currentColor" d="M60 24h18l12 14v8H60z"/><path fill="#06201a" d="M66 28h9l7 8H66z"/><circle cx="24" cy="48" r="9" fill="currentColor" stroke="#06201a" stroke-width="3"/><circle cx="74" cy="48" r="9" fill="currentColor" stroke="#06201a" stroke-width="3"/></symbol>
+  <symbol id="i-exc" viewBox="0 0 100 60"><rect x="8" y="46" width="52" height="11" rx="5.5" fill="currentColor"/><rect x="16" y="30" width="34" height="15" fill="currentColor"/><path fill="currentColor" d="M34 18h14v12H34z"/><path d="M46 32L72 10l16 14M88 24l-5 20" fill="none" stroke="currentColor" stroke-width="5" stroke-linejoin="round"/><path fill="currentColor" d="M80 43l14-3-5 13z"/></symbol>
+  <symbol id="i-plant" viewBox="0 0 100 60"><path fill="currentColor" d="M8 32h30v24H8zM42 22h22v34H42z"/><path fill="currentColor" d="M50 4h7v18h-7z"/><path d="M66 44l30-22" stroke="currentColor" stroke-width="4"/><path d="M12 38h8v6h-8zM26 38h8v6h-8z" fill="#06201a"/></symbol>
+  <symbol id="i-solar" viewBox="0 0 100 60"><path fill="currentColor" d="M8 52l24-26h60L68 52z"/><path d="M26 52l24-26M46 52l24-26M18 39h58" stroke="#06201a" stroke-width="2"/><circle cx="82" cy="12" r="7" fill="currentColor"/></symbol>
+  <symbol id="i-river" viewBox="0 0 100 60"><g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"><path d="M6 18q11-10 22 0t22 0 22 0 20 0"/><path d="M6 32q11-10 22 0t22 0 22 0 20 0"/><path d="M6 46q11-10 22 0t22 0 22 0 20 0"/></g></symbol>
+  <symbol id="i-pit" viewBox="0 0 100 60"><path fill="currentColor" d="M2 8h96l-12 10H74l-8 10h-6l-8 10H48l-8-10h-6l-8-10H14zM46 42h8v12h-8z"/></symbol>
+  <symbol id="i-gem" viewBox="0 0 100 60"><path fill="currentColor" d="M30 6h40l22 18-42 32L8 24z"/><path d="M8 24h84M30 6l20 50 20-50M50 6l-20 18M50 6l20 18" stroke="#06201a" stroke-width="2" fill="none"/></symbol>
+</svg>
+
+<header>
+  <div class="wrap">
+    <a class="logo gold" href="#top">秦汉西非<small>QIN HAN WEST AFRICA</small></a>
+    <nav aria-label="主导航">
+      <a href="#about">关于我们</a><a href="#business">业务领域</a><a href="#namdini">代表项目</a>
+      <a href="#pipeline">在建与跟进</a><a href="#assets">设备资源</a><a href="#team">团队</a>
+      <a class="cta" href="#contact">联系我们</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<div class="hero">
+  <img class="bg" src="photos/hero.jpg" alt="" onerror="this.remove()">
+  <canvas id="dust" aria-hidden="true"></canvas>
+  <svg class="pit" viewBox="0 0 1200 420" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+    <defs>
+      <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#14624a"/><stop offset="1" stop-color="#0a3a2c"/></linearGradient>
+      <linearGradient id="g2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8bf62"/><stop offset="1" stop-color="#9a6a1a"/></linearGradient>
+      <linearGradient id="g3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0b2f25"/><stop offset="1" stop-color="#06201a"/></linearGradient>
+    </defs>
+    <g data-s=".05"><polygon fill="url(#g1)" opacity=".75" points="0,150 260,150 260,176 470,176 470,204 650,204 650,230 760,230 760,204 940,204 940,176 1130,176 1130,150 1200,150 1200,420 0,420"/></g>
+    <g data-s=".12"><polygon fill="url(#g2)" opacity=".9" points="0,236 210,236 210,262 400,262 400,290 570,290 570,316 690,316 690,290 860,290 860,262 1050,262 1050,236 1200,236 1200,420 0,420"/>
+      <g stroke="#06201a" stroke-opacity=".35" stroke-width="2"><line x1="0" y1="236" x2="210" y2="236"/><line x1="210" y1="262" x2="400" y2="262"/><line x1="400" y1="290" x2="570" y2="290"/></g></g>
+    <g data-s=".2"><polygon fill="url(#g3)" points="0,330 160,330 160,350 340,350 340,372 880,372 880,350 1060,350 1060,330 1200,330 1200,420 0,420"/>
+      <g class="truck" style="color:#e3b95a"><use href="#i-truck" x="0" y="318" width="96" height="58"/></g>
+      <use href="#i-exc" x="1010" y="292" width="110" height="66" style="color:#cfd8d3"/></g>
+  </svg>
+  <div class="wrap">
+    <span class="kicker">加纳 · 矿业工程 · 矿山运营 · 资源投资</span>
+    <h1 class="gold">在加纳，参与建设并运营大型金矿</h1>
+    <p class="sub">秦汉西非自 2022 年进入加纳市场，常驻专业团队，自有 50 余台套工程及矿山机械，从土建、采剥到生产运维，连续参与加纳规模最大的单系列金矿项目。</p>
+    <div class="btns"><a class="btn fill" href="#namdini">查看代表项目</a><a class="btn" href="#contact">联系我们</a></div>
+  </div>
+  <span class="scrollhint"></span>
+</div>
+
+<div class="stats"><div class="wrap">
+  <ul>
+    <li><b class="gold"><span data-to="2022" data-from="2000">2022</span></b><span>年进入加纳市场</span></li>
+    <li><b class="gold"><span data-to="20">20</span><i>亿元+</i></b><span>已完及在建项目合同额</span></li>
+    <li><b class="gold"><span data-to="90">90</span><i>平方公里+</i></b><span>加纳矿业权面积</span></li>
+    <li><b class="gold"><span data-to="1">1</span><i>亿元+</i></b><span>设备及车辆资产总价值</span></li>
+    <li><b class="gold"><span data-to="50">50</span><i>余台套</i></b><span>工程及矿山机械设备</span></li>
+    <li><b class="gold"><span data-to="40">40</span><i>余人</i></b><span>中国管理和技术骨干</span></li>
+  </ul>
+</div></div>
+
+<section id="about">
+  <div class="wrap about">
+    <div class="rv">
+      <span class="bar"></span>
+      <h2 style="font-size:clamp(28px,4vw,42px);margin-bottom:20px">关于秦汉西非</h2>
+      <p>公司围绕加纳的大型矿山建设与生产运营持续开展业务，逐步形成以矿业工程、采剥施工、运营维护和矿业投资为核心，兼顾矿产品加工及基础设施项目开发的业务布局。</p>
+      <p>我们在加纳积累了大型金矿项目经验，建立了常驻专业团队、机械设备体系和本地经营网络，并持续向矿业资源投资与开发领域延伸。2025 年 10 月，秦汉西非分公司正式成立，统筹加纳区域的项目管理、人员配置和市场开发。</p>
+    </div>
+    <div class="rv">
+      <h3 class="gold" style="font-size:18px;margin-bottom:6px">加纳经营主体</h3>
+      <ul class="ent">
+        <li>QIN HAN MING BANG ENGINEERING COMPANY LTD</li>
+        <li>GOLDEN DYNASTY CO. LTD</li>
+        <li>HANWAY INTERNATIONAL INVESTMENT LTD</li>
+        <li>HANWAY MORRIDE MINING LTD</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="business" class="light">
+  <div class="wrap">
+    <div class="sec-h rv"><span class="bar"></span><h2>业务领域</h2><p>从矿山建设到长期运营，再到资源投资。</p></div>
+    <div class="grid g4">
+      <div class="card rv"><svg class="ic"><use href="#i-exc"/></svg><h3>矿山工程与采剥</h3><p>矿区土建、露天采剥、工程机械施工及相关配套工程。</p></div>
+      <div class="card rv"><svg class="ic"><use href="#i-truck"/></svg><h3>矿山运营维护</h3><p>金矿生产运营、设备维护与现场技术管理。</p></div>
+      <div class="card rv"><svg class="ic"><use href="#i-gem"/></svg><h3>矿业投资开发</h3><p>矿权资源、项目收购、矿山开发及项目评估。</p></div>
+      <div class="card rv"><svg class="ic"><use href="#i-plant"/></svg><h3>矿产品及工程配套</h3><p>尾矿再选、石灰石加工及新能源、基础设施项目。</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="namdini">
+  <div class="wrap">
+    <div class="sec-h rv"><span class="bar"></span><h2>代表项目</h2><p>连续参与建设、采剥和运维多个环节，对大型金矿的现场管理、设备运行及跨专业协作有完整的实践经验。</p></div>
+    <div class="nam rv">
+      <figure class="ph"><svg><use href="#i-pit"/></svg><img src="photos/namdini.jpg" alt="Namdini 金矿现场" onerror="this.remove()"></figure>
+      <div class="txt">
+        <small>加纳上东大区 · Talensi</small>
+        <h3 class="gold">Namdini 金矿</h3>
+        <p>由山东黄金旗下项目公司开发，是加纳规模最大的单系列金矿，也是西非具有代表性的大型露天金矿之一。项目体量大、施工环节多，对工程组织、设备保障和持续生产管理要求很高。</p>
+        <div class="scope">
+          <div><b>土建工程</b><span>参与矿区土建及相关施工，熟悉大型矿业项目的施工组织和现场协同。</span></div>
+          <div><b>矿山采剥</b><span>参与露天矿采剥作业，积累矿山机械投入、生产组织与施工管理经验。</span></div>
+          <div><b>运营维护</b><span>自建设阶段延续至生产运营阶段，目前仍负责 Namdini 金矿运营维护相关工作。</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="card rv" style="margin-top:22px">
+      <h3>其他矿业项目</h3>
+      <p>除大型硬岩金矿外，公司还在以下地区开展砂金开采业务，积累了不同作业环境下的现场管理、机械组织、人员配合及本地作业协调经验。</p>
+      <div class="places"><span>阿基姆 Akyem</span><span>阿夸蒂亚 Akwatia</span><span>博尔加坦加 Bolgatanga</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="pipeline" class="light">
+  <div class="wrap">
+    <div class="sec-h rv"><span class="bar"></span><h2>在建与跟进项目</h2><p>在工程与运营业务之外，公司持续筛选矿业资源、清洁能源及基础设施领域的项目。</p></div>
+    <h3 class="gold rv" style="margin-bottom:18px;font-size:22px">正在投资建设</h3>
+    <div class="grid g2">
+      <div class="card rv" style="padding:0">
+        <figure class="ph"><svg><use href="#i-plant"/></svg><img src="photos/tarkwa.jpg" alt="塔夸尾矿选矿厂" onerror="this.remove()"></figure>
+        <div style="padding:24px 26px 28px"><span class="tag on">在建</span><h3>塔夸 Tarkwa · 500 吨级尾矿选矿厂</h3><p>在塔夸地区投资推进尾矿选矿厂建设与后续运营，围绕尾矿再选和矿产资源综合利用开展业务。</p></div>
+      </div>
+      <div class="card rv" style="padding:0">
+        <figure class="ph"><svg><use href="#i-pit"/></svg><img src="photos/tema.jpg" alt="特马石灰石加工厂" onerror="this.remove()"></figure>
+        <div style="padding:24px 26px 28px"><span class="tag on">在建</span><h3>特马 Tema · 石灰石加工厂</h3><p>在特马地区推进石灰石加工厂建设及运营，拓展矿业相关原材料加工与配套业务。</p></div>
+      </div>
+    </div>
+    <h3 class="gold rv" style="margin:48px 0 18px;font-size:22px">正在跟进的投资及合作项目</h3>
+    <div class="grid g3">
+      <div class="card rv"><svg class="ic"><use href="#i-gem"/></svg><span class="tag">前期</span><h3>大型金矿收购及开发</h3><p>目标矿山探明及控制矿石资源量超过 1,000 万吨。目前重点在项目研究、合作对接和开发可行性评估。</p></div>
+      <div class="card rv"><svg class="ic"><use href="#i-solar"/></svg><span class="tag">前期</span><h3>大型光伏建设项目</h3><p>与加纳地方行政机构直接对接，围绕建设条件、实施方案及合作方式开展前期工作，业务从矿业延伸至能源基础设施。</p></div>
+      <div class="card rv"><svg class="ic"><use href="#i-river"/></svg><span class="tag">前期</span><h3>白沃尔特河治理项目</h3><p>跟进白沃尔特河（White Volta River）河道治理及相关工程机会，与加纳千年发展管理局（MiDA）相关项目方向保持对接。</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="assets">
+  <div class="wrap">
+    <div class="sec-h rv"><span class="bar"></span><h2>设备与矿业权资源</h2></div>
+    <div class="eq">
+      <figure class="ph tall rv"><svg><use href="#i-truck"/></svg><img src="photos/equipment.jpg" alt="矿山设备车队" onerror="this.remove()"></figure>
+      <ul class="rv">
+        <li><b class="gold">50 余台套</b><span>挖掘机、矿卡、钻机、吊车、装载机、推土机、平地机、破碎加工设备、随车吊、压路机、洒水车、加油车及维修保养和后勤保障车辆</span></li>
+        <li><b class="gold">近 10 辆</b><span>陆地巡洋舰（Land Cruiser）、途乐（Patrol）、海拉克斯（Hilux）等越野车及皮卡</span></li>
+        <li><b class="gold">1 亿元+</b><span>设备及车辆资产总价值（人民币），满足矿山建设、采剥施工、日常运营及现场后勤需要</span></li>
+        <li><b class="gold">90 平方公里+</b><span>加纳矿业权面积合计，具备自有资源项目开发及矿业权合作的基础</span></li>
+        <li><b class="gold">20 亿元+</b><span>已完成和正在实施的项目合同额（人民币），覆盖大型矿山建设、采剥及持续运营</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="team" class="light">
+  <div class="wrap">
+    <div class="sec-h rv"><span class="bar"></span><h2>团队与合作</h2><p>中加两地团队在项目论证、建设实施、现场运营和经营管理方面配合。</p></div>
+    <div class="rv">
+      <div class="seg"><div>管理 10 余人</div><div>金矿运营专家 20 余人</div><div>技术 10 余人</div></div>
+      <p class="segnote">中国管理与技术骨干 40 余人，另有加纳当地技术人员、操作工人及现场辅助人员；项目高峰期，在加纳的中国员工超过 100 人。</p>
+    </div>
+    <div class="grid g2">
+      <div class="card rv"><h3>人才背景</h3><p>国内矿业业务同步建设专业团队，成员具备山东黄金、招金矿业、紫金矿业、洛阳钼业、建龙集团等企业工作经历，覆盖矿业投资、地质技术、生产运营及财务管理。</p></div>
+      <div class="card rv"><h3>政府及行业主管部门</h3><p>长期与矿业及自然资源主管机构保持业务沟通，在矿业权、环保、税务、人员出入境及跨部门事务方面有丰富的对接经验。</p>
+        <div class="govs"><span>土地与自然资源部</span><span>矿业委员会</span><span>环境保护管理局</span><span>加纳税务局</span><span>加纳警察局</span><span>加纳移民局</span></div></div>
+      <div class="card rv"><h3>地方合作与业务网络</h3><p>与西部大区（Western Region）、上东大区（Upper East Region）的政府机构及合作方保持长期交往，部分合作方向已通过谅解备忘录（MOU）明确，并建立了涵盖当地专业人员、工程施工、设备服务及项目协调的本地业务网络。</p></div>
+      <div class="card rv"><h3>业务发展方向</h3><p>业务重心仍是矿山工程、采剥施工和长期运维，同时稳步推进金矿投资与并购、尾矿再选、矿产品加工及能源基础设施项目，以加纳为基础完善西非地区的矿业开发与项目运营布局。</p></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer id="contact" class="contact">
+  <div class="wrap" style="padding-top:90px">
+    <h2 class="gold rv">洽谈合作，欢迎联系</h2>
+    <p class="lead rv">矿山工程、运营维护、资源投资与项目合作，可直接联系 Richard Zhu。</p>
+    <div class="cg rv">
+      <div><small>联系人</small><b>Richard Zhu</b></div>
+      <a href="tel:+233503333343"><small>电话</small><b>+233 50 333 3343</b></a>
+      <a href="https://wa.me/233503333343" target="_blank" rel="noopener"><small>WhatsApp（同号）</small><b>点击发起对话</b></a>
+      <a href="mailto:haoran111888@qq.com"><small>邮箱</small><b>haoran111888@qq.com</b></a>
+    </div>
+    <a class="cg-addr rv" style="display:block;margin-top:18px;border:1px solid var(--line);padding:22px;text-decoration:none;background:rgba(6,32,26,.6)" href="https://www.google.com/maps/search/?api=1&query=16+Nortei+Ababio+St+Accra+Ghana" target="_blank" rel="noopener">
+      <small style="display:block;color:var(--gold);font-size:13px;margin-bottom:6px">办公地址</small>
+      <b style="font-weight:600;font-size:15px">HANWAY INTERNATIONAL INVESTMENT LTD，Block B, House, 16 Nortei Ababio St, Accra</b>
+    </a>
+    <div class="copy">© 2026 秦汉西非 Qin Han West Africa. 保留所有权利。</div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  // 滚动显现
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+  // 数字滚动
+  var co=new IntersectionObserver(function(es){es.forEach(function(e){
+    if(!e.isIntersecting)return;co.unobserve(e.target);
+    var el=e.target,to=+el.dataset.to,from=+(el.dataset.from||0);
+    if(rm){el.textContent=to;return}
+    var t0=performance.now();
+    (function step(t){var p=Math.min(1,(t-t0)/1400),v=from+(to-from)*(1-Math.pow(1-p,3));el.textContent=Math.round(v);if(p<1)requestAnimationFrame(step)})(t0);
+  })},{threshold:.6});
+  document.querySelectorAll('[data-to]').forEach(function(el){co.observe(el)});
+  // 矿坑视差
+  var layers=document.querySelectorAll('.pit g[data-s]');
+  if(!rm)addEventListener('scroll',function(){var y=scrollY;if(y>900)return;layers.forEach(function(g){g.style.transform='translateY('+(y*g.dataset.s*-1)+'px)'})},{passive:true});
+  // 金色粉尘
+  var c=document.getElementById('dust'),x=c.getContext('2d'),W,H,ps=[];
+  function size(){W=c.width=c.offsetWidth;H=c.height=c.offsetHeight}
+  size();addEventListener('resize',size);
+  for(var i=0;i<70;i++)ps.push({x:Math.random(),y:Math.random(),r:Math.random()*1.8+.4,v:Math.random()*.0007+.0002,a:Math.random()*.6+.2});
+  function draw(){
+    x.clearRect(0,0,W,H);
+    ps.forEach(function(p){
+      p.y-=p.v;p.x+=Math.sin(p.y*20)*.0003;if(p.y<0){p.y=1;p.x=Math.random()}
+      x.beginPath();x.fillStyle='rgba(240,200,100,'+p.a+')';x.arc(p.x*W,p.y*H,p.r,0,6.283);x.fill();
+    });
+    if(!rm)requestAnimationFrame(draw);
+  }
+  draw();
+})();
+</script>
+</body>
+</html>
